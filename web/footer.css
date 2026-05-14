@@ -1,0 +1,64 @@
+/* ===== MODERN FOOTER STYLES ===== */
+.footer-bloque-2-marco {
+    margin: 0px auto;
+    display: flex;
+    max-width: 1440px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.footer .logo {
+    width: 125px;
+    margin: 0 60px 0 0;
+    padding: 0;
+    text-align: left;
+    background-image: url(img/Ninja-Logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 60px;
+    transition: var(--transition);
+}
+
+.footer .logo:hover {
+    background-image: url(img/logo2.png);
+    transform: scale(1.05);
+}
+
+.descargar {
+    margin: 24px 0;
+}
+
+.descargar a {
+    color: white;
+    display: inline-block;
+    padding: 14px 28px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    background: #0077cc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: var(--transition);
+}
+
+.descargar a:hover {
+    background: #005cb8;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.idioma {
+    cursor: pointer;
+    color: var(--text-secondary);
+    transition: var(--transition);
+}
+
+.idioma:hover {
+    color: var(--neon-blue);
+}
+
+
+     
+ 
