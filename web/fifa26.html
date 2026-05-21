@@ -1,268 +1,135 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIFA 26 - Epic Games Store</title>
+    <title>FIFA 26 - BreinerStudio</title>
     <link rel="stylesheet" href="css.css">
-    <link rel="icon" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="img/Ninja-Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo"></div>
-                <span class="logo-text">NINJA STORE</span>
+                <img src="img/Ninja-Logo.png" alt="BreinerStudio" class="logo-img">
+                <span class="logo-text">BreinerStudio</span>
             </div>
-
             <div class="nav-menu">
-                <a href="Index.html" class="nav-link">Home</a>
-                <a href="#games" class="nav-link">Games</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#about" class="nav-link">About</a>
-            </div>
-
-            <div class="nav-actions">
-                <div class="search-box">
-                    <input type="text" placeholder="Search games..." class="search-input">
-                    <button class="search-btn">🔍</button>
-                </div>
-                <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
-                <div class="user-icon">👤</div>
+                <a href="Index.html" class="nav-link">Inicio</a>
+                <a href="Index.html#games" class="nav-link">Juegos</a>
+                <a href="Index.html#contact" class="nav-link">Contacto</a>
+                <a href="Index.html#about" class="nav-link">Sobre nosotros</a>
             </div>
         </div>
     </nav>
 
-    <!-- Game Banner -->
-    <section class="game-banner">
-        <div class="game-banner-bg" style="background-image: url('img/fifa26.webp');"></div>
-        <div class="game-banner-overlay"></div>
-        <div class="game-banner-content">
-            <div class="game-title-section">
-                <h1 class="game-title">FIFA 26</h1>
-                <div class="game-meta">
-                    <span class="game-developer">EA Sports</span>
-                    <span class="game-rating">⭐ 4.8/5</span>
-                    <span class="game-reviews">(6.2M reviews)</span>
+    <!-- Game Hero Section -->
+    <section class="game-hero">
+        <div class="game-hero-bg" style="background-image: url('img/games/fifa26-main.jpg');"></div>
+        <div class="game-hero-overlay"></div>
+        <div class="game-hero-content">
+            <h1 class="game-title">FIFA 26</h1>
+            <p class="game-subtitle">EA Sports</p>
+            <button class="game-btn-play">Jugar Ahora</button>
+        </div>
+    </section>
+
+    <!-- Game Info Section -->
+    <section class="game-info-section">
+        <div class="game-container">
+            <div class="game-info-main">
+                <h2>Descripción</h2>
+                <p class="game-description">
+                    El videojuego de fútbol más realista del año. Controla a tus equipos favoritos con auténticos jugadores del mundo real. Participa en emocionantes partidos, crea tu propio equipo de ensueño y compite contra amigos en modo multijugador. Con gráficos ultra realistas y mecánicas mejoradas, FIFA 26 es la experiencia futbolística definitiva.
+                </p>
+
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">Género</span>
+                        <span class="stat-value">Deporte / Fútbol</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Plataformas</span>
+                        <span class="stat-value">PC, PS5, Xbox</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Clasificación</span>
+                        <span class="stat-value">⭐ 4.4/5</span>
+                    </div>
                 </div>
             </div>
-            <div class="game-price-box">
-                <div class="price-label">Precio</div>
-                <div class="price-discount">12,99€</div>
-                <div class="original-price">59,99€</div>
-                <div class="price-actions">
-                    <button class="btn-primary">Add to Cart</button>
-                    <button class="btn-secondary">Add to Wishlist</button>
+
+            <!-- Game Gallery -->
+            <div class="game-gallery">
+                <h2>Galería</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/games/fifa26-1.jpg" alt="Partidos">
+                        <span class="gallery-label">Partidos</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/games/fifa26-2.jpg" alt="Equipos">
+                        <span class="gallery-label">Equipos</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/games/fifa26-3.jpg" alt="Jugadores">
+                        <span class="gallery-label">Jugadores</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Game Content -->
-    <main class="game-content">
-        <!-- Game Description -->
-        <section class="game-section">
-            <div class="container">
-                <div class="game-description-grid">
-                    <div class="game-description">
-                        <h2>About This Game</h2>
-                        <p>FIFA 26 is the latest installment in the FIFA series, bringing you the most realistic soccer experience ever. Create your ultimate team, play with your favorite stars, and compete in adrenaline-pumping multiplayer modes. Experience the beauty of the game like never before with stunning graphics and innovative gameplay mechanics.</p>
-
-                        <div class="game-highlights">
-                            <div class="highlight-item">
-                                <span class="highlight-icon">⚽</span>
-                                <span>Ultimate Team Mode</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🏆</span>
-                                <span>Career Mode</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🌍</span>
-                                <span>Global Competitions</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🎮</span>
-                                <span>Cross-Platform Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="game-sidebar">
-                        <div class="game-specs">
-                            <h3>System Requirements</h3>
-                            <div class="specs-section">
-                                <h4>Minimum:</h4>
-                                <ul>
-                                    <li>OS: Windows 10 64-bit</li>
-                                    <li>CPU: Intel Core i3-6100 or AMD Athlon X4 880K</li>
-                                    <li>RAM: 8GB</li>
-                                    <li>GPU: NVIDIA GTX 660 or AMD Radeon HD 7850</li>
-                                    <li>Storage: 100GB</li>
-                                </ul>
-                            </div>
-                            <div class="specs-section">
-                                <h4>Recommended:</h4>
-                                <ul>
-                                    <li>OS: Windows 10 64-bit</li>
-                                    <li>CPU: Intel Core i5-3550 or AMD FX 8150</li>
-                                    <li>RAM: 8GB</li>
-                                    <li>GPU: NVIDIA GTX 670 or AMD Radeon R9 270X</li>
-                                    <li>Storage: 100GB SSD</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Game Trailer -->
-        <section class="game-section trailer-section">
-            <div class="container">
-                <h2>Watch Trailer</h2>
-                <div class="trailer-container">
-                    <div class="trailer-video">
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/0tEi5iDVnjc" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Game Gallery -->
-        <section class="game-section gallery-section">
-            <div class="container">
-                <h2>Screenshots</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="img/fifa26.webp" alt="FIFA 26 Screenshot 1">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fifa26.webp" alt="FIFA 26 Screenshot 2">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fifa26.webp" alt="FIFA 26 Screenshot 3">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fifa26.webp" alt="FIFA 26 Screenshot 4">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fifa26.webp" alt="FIFA 26 Screenshot 5">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fifa26.webp" alt="FIFA 26 Screenshot 6">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section class="game-section reviews-section">
-            <div class="container">
-                <h2>Player Reviews</h2>
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-avatar">👤</div>
-                            <div class="review-info">
-                                <h4>SoccerLegend</h4>
-                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Best FIFA yet! The gameplay feels so realistic and the graphics are stunning. Ultimate Team is addictive!"</p>
-                        <div class="review-date">Posted 2 days ago</div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-avatar">👤</div>
-                            <div class="review-info">
-                                <h4>FIFAFan2024</h4>
-                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p class="review-text">"EA Sports nailed it again. The new mechanics make the game feel fresh while keeping the core FIFA experience."</p>
-                        <div class="review-date">Posted 1 week ago</div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-avatar">👤</div>
-                            <div class="review-info">
-                                <h4>ProPlayer</h4>
-                                <div class="review-rating">⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Great improvement over last year. Career mode is deeper and the online experience is smoother."</p>
-                        <div class="review-date">Posted 2 weeks ago</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="footer-logo-img logo"></div>
-                        <span class="footer-logo-text">NINJA STORE</span>
-                    </div>
-                    <p class="footer-description">Your ultimate destination for premium gaming experiences. Discover, play, and connect with the gaming community.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">🎥</a>
-                    </div>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="Index.html" class="footer-logo">
+                    <img src="img/Ninja-Logo.png" alt="BreinerStudio">
+                    <span class="footer-logo-text">BreinerStudio</span>
+                </a>
+                <p class="footer-description">Tu tienda de videojuegos favorita con los mejores títulos y experiencias gaming.</p>
+            </div>
 
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="#games">Games</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">System Requirements</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Community</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <div class="footer-links">
+                    <a href="Index.html">Inicio</a>
+                    <a href="Index.html#games">Juegos</a>
+                    <a href="Index.html#contact">Contacto</a>
+                    <a href="Index.html#about">Sobre nosotros</a>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ninja Store. All rights reserved.</p>
-                <div class="footer-badges">
-                    <span class="badge">🔒 Secure</span>
-                    <span class="badge">⚡ Fast Download</span>
-                    <span class="badge">🎮 Premium Games</span>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon" title="Discord">💬</a>
+                    <a href="#" class="social-icon" title="YouTube">▶</a>
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
                 </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2026 BreinerStudio. Todos los derechos reservados.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Contacto</a>
             </div>
         </div>
     </footer>
 
-    <script src="modal.js"></script>
+    <script>
+        document.querySelector('.game-btn-play').addEventListener('click', function() {
+            alert('¡Bienvenido a la cancha!');
+        });
+    </script>
 </body>
 </html>

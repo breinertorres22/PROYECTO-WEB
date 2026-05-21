@@ -1,79 +1,138 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Call of Duty - Epic Games Store</title>
+    <title>Call of Duty - BreinerStudio</title>
     <link rel="stylesheet" href="css.css">
-    <link rel="icon" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="img/Ninja-Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo"></div>
-                <span class="logo-text">NINJA STORE</span>
+                <img src="img/Ninja-Logo.png" alt="BreinerStudio" class="logo-img">
+                <span class="logo-text">BreinerStudio</span>
             </div>
-
             <div class="nav-menu">
-                <a href="Index.html" class="nav-link">Home</a>
-                <a href="#games" class="nav-link">Games</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#about" class="nav-link">About</a>
-            </div>
-
-            <div class="nav-actions">
-                <div class="search-box">
-                    <input type="text" placeholder="Search games..." class="search-input">
-                    <button class="search-btn">🔍</button>
-                </div>
-                <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
-                <div class="user-icon">👤</div>
+                <a href="Index.html" class="nav-link">Inicio</a>
+                <a href="Index.html#games" class="nav-link">Juegos</a>
+                <a href="Index.html#contact" class="nav-link">Contacto</a>
+                <a href="Index.html#about" class="nav-link">Sobre nosotros</a>
             </div>
         </div>
     </nav>
 
-    <!-- Game Banner -->
-    <section class="game-banner">
-        <div class="game-banner-bg" style="background-image: url('img/call of duty.jpg');"></div>
-        <div class="game-banner-overlay"></div>
-        <div class="game-banner-content">
-            <div class="game-title-section">
-                <h1 class="game-title">Call of Duty</h1>
-                <div class="game-meta">
-                    <span class="game-developer">Activision</span>
-                    <span class="game-rating">⭐ 4.7/5</span>
-                    <span class="game-reviews">(5.8M reviews)</span>
+    <!-- Game Hero Section -->
+    <section class="game-hero">
+        <div class="game-hero-bg" style="background-image: url('img/games/cod-main.jpg');"></div>
+        <div class="game-hero-overlay"></div>
+        <div class="game-hero-content">
+            <h1 class="game-title">Call of Duty</h1>
+            <p class="game-subtitle">Activision</p>
+            <button class="game-btn-play">Jugar Ahora</button>
+        </div>
+    </section>
+
+    <!-- Game Info Section -->
+    <section class="game-info-section">
+        <div class="game-container">
+            <div class="game-info-main">
+                <h2>Descripción</h2>
+                <p class="game-description">
+                    Vive intensos combates multijugador en los mejores mapas de franquicia. Juega campaña épica con misiones desafiantes y cinematografía impresionante. Modalidades de juego clásicas como Team Deathmatch, Domination y modo Zombis lleno de acción. Con armas realistas y sistemas de progresión emocionantes, Call of Duty es el máximo exponente del shooter competitivo.
+                </p>
+
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">Género</span>
+                        <span class="stat-value">Shooter / FPS</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Plataformas</span>
+                        <span class="stat-value">PC, PS5, Xbox</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Clasificación</span>
+                        <span class="stat-value">⭐ 4.5/5</span>
+                    </div>
                 </div>
             </div>
-            <div class="game-price-box">
-                <div class="price-label">Precio</div>
-                <div class="price-discount">22,99€</div>
-                <div class="original-price">79,99€</div>
-                <div class="price-actions">
-                    <button class="btn-primary">Add to Cart</button>
-                    <button class="btn-secondary">Add to Wishlist</button>
+
+            <!-- Game Gallery -->
+            <div class="game-gallery">
+                <h2>Galería</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/games/cod-1.jpg" alt="Multijugador">
+                        <span class="gallery-label">Multijugador</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/games/cod-2.jpg" alt="Campaña">
+                        <span class="gallery-label">Campaña</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/games/cod-3.jpg" alt="Zombis">
+                        <span class="gallery-label">Modo Zombis</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Game Content -->
-    <main class="game-content">
-        <!-- Game Description -->
-        <section class="game-section">
-            <div class="container">
-                <div class="game-description-grid">
-                    <div class="game-description">
-                        <h2>About This Game</h2>
-                        <p>Call of Duty is a first-person shooter video game franchise published by Activision. Starting out in 2003, it first focused on games set in World War II, but over time, the series has seen releases set in modern times, the midst of the Cold War, futuristic worlds and outer space.</p>
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="Index.html" class="footer-logo">
+                    <img src="img/Ninja-Logo.png" alt="BreinerStudio">
+                    <span class="footer-logo-text">BreinerStudio</span>
+                </a>
+                <p class="footer-description">Tu tienda de videojuegos favorita con los mejores títulos y experiencias gaming.</p>
+            </div>
 
-                        <div class="game-highlights">
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🎯</span>
-                                <span>Fast-Paced Action</span>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <div class="footer-links">
+                    <a href="Index.html">Inicio</a>
+                    <a href="Index.html#games">Juegos</a>
+                    <a href="Index.html#contact">Contacto</a>
+                    <a href="Index.html#about">Sobre nosotros</a>
+                </div>
+            </div>
+
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon" title="Discord">💬</a>
+                    <a href="#" class="social-icon" title="YouTube">▶</a>
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2026 BreinerStudio. Todos los derechos reservados.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Contacto</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.game-btn-play').addEventListener('click', function() {
+            alert('¡Batalla iniciada!');
+        });
+    </script>
+</body>
+</html>
                             </div>
                             <div class="highlight-item">
                                 <span class="highlight-icon">👥</span>

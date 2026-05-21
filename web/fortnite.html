@@ -1,273 +1,135 @@
 ﻿<!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortnite - Epic Games Store</title>
+    <title>Fortnite - BreinerStudio</title>
     <link rel="stylesheet" href="css.css">
-    <link rel="icon" href="img/favicon.png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="game-page.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="icon" href="img/Ninja-Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <div class="logo"></div>
-                <span class="logo-text">NINJA STORE</span>
+                <img src="img/Ninja-Logo.png" alt="BreinerStudio" class="logo-img">
+                <span class="logo-text">BreinerStudio</span>
             </div>
-
             <div class="nav-menu">
-                <a href="Index.html" class="nav-link" data-key="navHome">Home</a>
-                <a href="#games" class="nav-link" data-key="navGames">Games</a>
-                <a href="#features" class="nav-link" data-key="navFeatures">Features</a>
-            </div>
-            <div class="nav-actions">
-                <div class="search-box">
-                    <input data-placeholder-key="searchPlaceholder" type="text" placeholder="Search games..." class="search-input">
-                    <button class="search-btn">🔍</button>
-                </div>
-                <div class="language-selector">
-                    <select id="languageSelect" aria-label="Select language">
-                        <option value="en">EN</option>
-                        <option value="es">ES</option>
-                        <option value="ca">CA</option>
-                    </select>
-                </div>
-                <div class="cart-icon">🛒 <span class="cart-count">0</span></div>
-                <div class="user-icon">👤</div>
+                <a href="Index.html" class="nav-link">Inicio</a>
+                <a href="Index.html#games" class="nav-link">Juegos</a>
+                <a href="Index.html#contact" class="nav-link">Contacto</a>
+                <a href="Index.html#about" class="nav-link">Sobre nosotros</a>
             </div>
         </div>
     </nav>
 
-    <!-- Game Banner -->
-    <section class="game-banner">
-        <div class="game-banner-bg" style="background-image: url('img/fortnite.jpg');"></div>
-        <div class="game-banner-overlay"></div>
-        <div class="game-banner-content">
-            <div class="game-title-section">
-                <h1 class="game-title">Fortnite</h1>
-                <div class="game-meta">
-                    <span class="game-developer">Epic Games</span>
-                    <span class="game-rating">⭐ 4.8/5</span>
-                    <span class="game-reviews">(2.1M reviews)</span>
+    <!-- Game Hero Section -->
+    <section class="game-hero">
+        <div class="game-hero-bg" style="background-image: url('img/games/fortnite-main.jpg');"></div>
+        <div class="game-hero-overlay"></div>
+        <div class="game-hero-content">
+            <h1 class="game-title">Fortnite</h1>
+            <p class="game-subtitle">Epic Games</p>
+            <button class="game-btn-play">Jugar Ahora</button>
+        </div>
+    </section>
+
+    <!-- Game Info Section -->
+    <section class="game-info-section">
+        <div class="game-container">
+            <div class="game-info-main">
+                <h2>Descripción</h2>
+                <p class="game-description">
+                    Batalla contra otros jugadores en un juego de batalla real épico. Construye estructuras, recoge armas y sé el último sobreviviente en una isla dinámica. Juega con amigos, participa en eventos exclusivos y personaliza tu personaje con cientos de skins únicos.
+                </p>
+
+                <div class="game-stats">
+                    <div class="stat">
+                        <span class="stat-label">Género</span>
+                        <span class="stat-value">Battle Royale</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Plataformas</span>
+                        <span class="stat-value">PC, Consolas, Mobile</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-label">Clasificación</span>
+                        <span class="stat-value">⭐ 4.6/5</span>
+                    </div>
                 </div>
             </div>
-            <div class="game-price-box">
-                <div class="price-label">Precio</div>
-                <div class="price-discount">FREE TO PLAY</div>
-                <div class="price-actions">
-                    <button class="btn-primary">Download Now</button>
-                    <button class="btn-secondary">Add to Wishlist</button>
+
+            <!-- Game Gallery -->
+            <div class="game-gallery">
+                <h2>Galería</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="img/games/fortnite-1.jpg" alt="Batalla">
+                        <span class="gallery-label">Combate</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/games/fortnite-2.jpg" alt="Construcción">
+                        <span class="gallery-label">Construcción</span>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="img/games/fortnite-3.jpg" alt="Personajes">
+                        <span class="gallery-label">Personajes</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Game Content -->
-    <main class="game-content">
-        <!-- Game Description -->
-        <section class="game-section">
-            <div class="container">
-                <div class="game-description-grid">
-                    <div class="game-description">
-                        <h2>About This Game</h2>
-                        <p>Fortnite is the completely free Battle Royale game where you and your friends battle to be the last person standing. Choose from multiple game modes including Battle Royale, Creative, and Save the World. Build structures, craft weapons, and outlast your opponents in this action-packed adventure.</p>
-
-                        <div class="game-highlights">
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🎯</span>
-                                <span>Battle Royale Mode</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🏗️</span>
-                                <span>Building System</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🎨</span>
-                                <span>Creative Mode</span>
-                            </div>
-                            <div class="highlight-item">
-                                <span class="highlight-icon">🌍</span>
-                                <span>Cross-Platform Play</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="game-sidebar">
-                        <div class="game-specs">
-                            <h3>System Requirements</h3>
-                            <div class="specs-section">
-                                <h4>Minimum:</h4>
-                                <ul>
-                                    <li>OS: Windows 7/8/10 64-bit</li>
-                                    <li>CPU: Core i3 2.4GHz</li>
-                                    <li>RAM: 4GB</li>
-                                    <li>GPU: Intel HD 4000</li>
-                                    <li>Storage: 20GB</li>
-                                </ul>
-                            </div>
-                            <div class="specs-section">
-                                <h4>Recommended:</h4>
-                                <ul>
-                                    <li>OS: Windows 10 64-bit</li>
-                                    <li>CPU: Core i5 2.8GHz</li>
-                                    <li>RAM: 8GB</li>
-                                    <li>GPU: GTX 660 or equivalent</li>
-                                    <li>Storage: 20GB SSD</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Game Trailer -->
-        <section class="game-section trailer-section">
-            <div class="container">
-                <h2>Watch Trailer</h2>
-                <div class="trailer-container">
-                    <div class="trailer-video">
-                        <iframe width="100%" height="500" src="https://www.youtube.com/embed/5eXcI1X1A8A" frameborder="0" allowfullscreen></iframe>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Game Gallery -->
-        <section class="game-section gallery-section">
-            <div class="container">
-                <h2>Screenshots</h2>
-                <div class="gallery-grid">
-                    <div class="gallery-item">
-                        <img src="img/fortnite.jpg" alt="Fortnite Screenshot 1">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fortnite.jpg" alt="Fortnite Screenshot 2">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fortnite.jpg" alt="Fortnite Screenshot 3">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fortnite.jpg" alt="Fortnite Screenshot 4">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fortnite.jpg" alt="Fortnite Screenshot 5">
-                    </div>
-                    <div class="gallery-item">
-                        <img src="img/fortnite.jpg" alt="Fortnite Screenshot 6">
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Reviews Section -->
-        <section class="game-section reviews-section">
-            <div class="container">
-                <h2>Player Reviews</h2>
-                <div class="reviews-grid">
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-avatar">👤</div>
-                            <div class="review-info">
-                                <h4>GameMaster2024</h4>
-                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Amazing game! The building mechanics are so satisfying and the community events are always exciting. Fortnite never gets old!"</p>
-                        <div class="review-date">Posted 2 days ago</div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-avatar">👤</div>
-                            <div class="review-info">
-                                <h4>ProGamer99</h4>
-                                <div class="review-rating">⭐⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Best battle royale game out there. Regular updates keep it fresh and the cross-play feature is fantastic."</p>
-                        <div class="review-date">Posted 1 week ago</div>
-                    </div>
-
-                    <div class="review-card">
-                        <div class="review-header">
-                            <div class="review-avatar">👤</div>
-                            <div class="review-info">
-                                <h4>CasualPlayer</h4>
-                                <div class="review-rating">⭐⭐⭐⭐</div>
-                            </div>
-                        </div>
-                        <p class="review-text">"Great for both competitive and casual play. The creative mode lets you build amazing things with friends."</p>
-                        <div class="review-date">Posted 3 weeks ago</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
     <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <div class="footer-logo">
-                        <div class="footer-logo-img logo"></div>
-                        <span class="footer-logo-text">NINJA STORE</span>
-                    </div>
-                    <p class="footer-description">Your ultimate destination for premium gaming experiences. Discover, play, and connect with the gaming community.</p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link">📘</a>
-                        <a href="#" class="social-link">🐦</a>
-                        <a href="#" class="social-link">📷</a>
-                        <a href="#" class="social-link">🎥</a>
-                    </div>
-                </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <a href="Index.html" class="footer-logo">
+                    <img src="img/Ninja-Logo.png" alt="BreinerStudio">
+                    <span class="footer-logo-text">BreinerStudio</span>
+                </a>
+                <p class="footer-description">Tu tienda de videojuegos favorita con los mejores títulos y experiencias gaming.</p>
+            </div>
 
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul class="footer-links">
-                        <li><a href="Index.html">Home</a></li>
-                        <li><a href="#games">Games</a></li>
-                        <li><a href="#features">Features</a></li>
-                        <li><a href="#about">About Us</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Support</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">System Requirements</a></li>
-                        <li><a href="#">Refund Policy</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer-section">
-                    <h4>Community</h4>
-                    <ul class="footer-links">
-                        <li><a href="#">Forums</a></li>
-                        <li><a href="#">Discord</a></li>
-                        <li><a href="#">Events</a></li>
-                        <li><a href="#">News</a></li>
-                    </ul>
+            <div class="footer-section">
+                <h3>Enlaces Rápidos</h3>
+                <div class="footer-links">
+                    <a href="Index.html">Inicio</a>
+                    <a href="Index.html#games">Juegos</a>
+                    <a href="Index.html#contact">Contacto</a>
+                    <a href="Index.html#about">Sobre nosotros</a>
                 </div>
             </div>
 
-            <div class="footer-bottom">
-                <p>&copy; 2024 Ninja Store. All rights reserved.</p>
-                <div class="footer-badges">
-                    <span class="badge">🔒 Secure</span>
-                    <span class="badge">⚡ Fast Download</span>
-                    <span class="badge">🎮 Premium Games</span>
+            <div class="footer-section">
+                <h3>Síguenos</h3>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" title="Twitter">𝕏</a>
+                    <a href="#" class="social-icon" title="Discord">💬</a>
+                    <a href="#" class="social-icon" title="YouTube">▶</a>
+                    <a href="#" class="social-icon" title="Instagram">📷</a>
                 </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="footer-copyright">&copy; 2026 BreinerStudio. Todos los derechos reservados.</p>
+            <div class="footer-bottom-links">
+                <a href="#">Privacidad</a>
+                <a href="#">Términos</a>
+                <a href="#">Contacto</a>
             </div>
         </div>
     </footer>
 
-    <script src="lang.js"></script>
-    <script src="modal.js"></script>
+    <script>
+        document.querySelector('.game-btn-play').addEventListener('click', function() {
+            alert('¡Bienvenido a la batalla!');
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,239 @@
+<!-- EJEMPLO: Cómo Integrar Páginas de Juegos en Index.html -->
+
+<!-- Esta es una sección de ejemplo que puedes añadir a tu Index.html -->
+<!-- Busca la sección #games o donde mostrar tus juegos -->
+
+<section id="games" class="games-section">
+    <div class="games-container">
+        <h2 class="section-title">Nuestros Juegos</h2>
+        <p class="section-subtitle">Explora nuestra colección de los mejores títulos gaming</p>
+        
+        <div class="games-grid">
+            <!-- Game Card: GTA V -->
+            <a href="gtav.html" class="game-card">
+                <div class="game-card-image" style="background-image: url('img/games/gtav-main.jpg');">
+                    <div class="game-card-overlay">
+                        <button class="game-card-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h3>Grand Theft Auto V</h3>
+                    <p>Rockstar Games</p>
+                    <div class="game-rating">⭐ 4.9/5</div>
+                </div>
+            </a>
+
+            <!-- Game Card: Fortnite -->
+            <a href="fortnite.html" class="game-card">
+                <div class="game-card-image" style="background-image: url('img/games/fortnite-main.jpg');">
+                    <div class="game-card-overlay">
+                        <button class="game-card-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h3>Fortnite</h3>
+                    <p>Epic Games</p>
+                    <div class="game-rating">⭐ 4.6/5</div>
+                </div>
+            </a>
+
+            <!-- Game Card: FIFA 26 -->
+            <a href="fifa26.html" class="game-card">
+                <div class="game-card-image" style="background-image: url('img/games/fifa26-main.jpg');">
+                    <div class="game-card-overlay">
+                        <button class="game-card-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h3>FIFA 26</h3>
+                    <p>EA Sports</p>
+                    <div class="game-rating">⭐ 4.4/5</div>
+                </div>
+            </a>
+
+            <!-- Game Card: Far Cry 6 -->
+            <a href="farcry6.html" class="game-card">
+                <div class="game-card-image" style="background-image: url('img/games/farcry6-main.jpg');">
+                    <div class="game-card-overlay">
+                        <button class="game-card-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h3>Far Cry 6</h3>
+                    <p>Ubisoft</p>
+                    <div class="game-rating">⭐ 4.6/5</div>
+                </div>
+            </a>
+
+            <!-- Game Card: Call of Duty -->
+            <a href="cod.html" class="game-card">
+                <div class="game-card-image" style="background-image: url('img/games/cod-main.jpg');">
+                    <div class="game-card-overlay">
+                        <button class="game-card-btn">Ver Detalles</button>
+                    </div>
+                </div>
+                <div class="game-card-content">
+                    <h3>Call of Duty</h3>
+                    <p>Activision</p>
+                    <div class="game-rating">⭐ 4.5/5</div>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- CSS para añadir en tu css.css o crear archivo separado -->
+<style>
+/* Games Section */
+.games-section {
+    padding: 6rem 2rem;
+    background: linear-gradient(180deg, #0a0e27 0%, #111729 100%);
+}
+
+.games-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    text-align: center;
+    color: #e0e7ff;
+    margin-bottom: 0.5rem;
+    font-weight: 800;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #94a3b8;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+}
+
+.games-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.game-card {
+    border-radius: 12px;
+    overflow: hidden;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: #111729;
+    border: 1px solid rgba(0, 217, 255, 0.1);
+}
+
+.game-card:hover {
+    transform: translateY(-8px);
+    border-color: rgba(255, 0, 110, 0.3);
+    box-shadow: 0 20px 40px rgba(0, 217, 255, 0.15);
+}
+
+.game-card-image {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.game-card-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.game-card:hover .game-card-overlay {
+    opacity: 1;
+}
+
+.game-card-btn {
+    background: linear-gradient(135deg, #ff006e, #ff1744);
+    color: white;
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+}
+
+.game-card-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 110, 0.5);
+}
+
+.game-card-content {
+    padding: 1.5rem;
+}
+
+.game-card-content h3 {
+    color: #e0e7ff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+.game-card-content p {
+    color: #94a3b8;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.game-rating {
+    color: #00d9ff;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .games-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .games-grid {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+
+<!-- Instrucciones de Integración -->
+
+1. Copia la sección <section id="games"> ... </section> completa
+
+2. Pegala en tu Index.html dentro de la sección donde quieras mostrar los juegos
+   (típicamente después del hero section, antes del footer)
+
+3. Opcionalmente, copia el CSS <style> en tu css.css o archivo de estilos
+
+4. Asegúrate de que las rutas de las imágenes sean correctas:
+   - Si las imágenes están en img/games/, déjalas como están
+   - Si están en otra carpeta, actualiza las rutas
+
+5. Verifica que tengas los archivos HTML:
+   - gtav.html
+   - fortnite.html
+   - fifa26.html
+   - farcry6.html
+   - cod.html
+
+6. Actualiza las imágenes placeholder en style="background-image: url(...)"
+   si es necesario
+
+¡Listo! Los juegos aparecerán como tarjetas clickeables que dirigen a sus páginas individuales.

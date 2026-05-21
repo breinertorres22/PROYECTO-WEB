@@ -1,17 +1,5 @@
 ﻿// DOM elements
 const gameCarousel = document.getElementById('gameCarousel');
-const modal = document.getElementById('gameModal');
-const closeBtn = document.querySelector('.close');
-
-// Modal content elements
-const modalTitle = document.getElementById('modalGameTitle');
-const modalEdition = document.getElementById('modalGameEdition');
-const modalImage = document.getElementById('modalGameImage');
-const modalDescription = document.getElementById('modalGameDescription');
-const modalPlatform = document.getElementById('modalGamePlatform');
-const modalGenre = document.getElementById('modalGameGenre');
-const modalReleaseDate = document.getElementById('modalGameReleaseDate');
-const modalPrice = document.getElementById('modalGamePrice');
 
 // Generate carousel slides from games array
 function generateCarousel() {
@@ -45,11 +33,9 @@ function generateCarousel() {
       </div>
     `;
 
-    slide.addEventListener('click', (event) => {
-      if (event.target.closest('.game-preview-link')) {
-        return;
-      }
-      openModal(game);
+    // Navigate to game page when clicking slide
+    slide.addEventListener('click', () => {
+      window.location.href = gameUrl;
     });
 
     gameCarousel.appendChild(slide);
@@ -70,51 +56,6 @@ function getGamePageUrl(title) {
   return urlMap[title] || '#';
 }
 
-// Open modal with game data
-function openModal(game) {
-  if (!modal || !modalTitle || !modalEdition || !modalImage || !modalDescription || !modalPlatform || !modalGenre || !modalReleaseDate || !modalPrice) {
-    return;
-  }
-
-  modalTitle.textContent = game.title;
-  modalEdition.textContent = game.edition;
-  modalDescription.textContent = game.description;
-  modalPlatform.textContent = game.platform;
-  modalGenre.textContent = game.genre;
-  modalReleaseDate.textContent = game.releaseDate;
-  modalPrice.textContent = game.finalPrice;
-
-  modalImage.className = 'modal-img ' + game.imageClass;
-  modal.classList.add('active');
-  document.body.style.overflow = 'hidden';
-}
-
-// Close modal
-function closeModal() {
-  if (!modal) return;
-  modal.classList.remove('active');
-  document.body.style.overflow = 'auto';
-}
-
-function initModalEvents() {
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeModal);
-  }
-
-  window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      closeModal();
-    }
-  });
-
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape') {
-      closeModal();
-    }
-  });
-}
-
 document.addEventListener('DOMContentLoaded', () => {
   generateCarousel();
-  initModalEvents();
 });
